@@ -4,11 +4,12 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Aravindh's blog",
   description: "A personal blog",
+  srcDir: 'src',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Projects', link: '/get-started' }
+      { text: 'Projects', link: '/projects/' }
     ],
 
     sidebar: [

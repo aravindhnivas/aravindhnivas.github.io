@@ -4,12 +4,12 @@ layout: home
 
 hero:
   name: "Aravindh's blog"
-  text: "A personal project to document my learnings and thoughts"
-  tagline: Spectroscopy, astrochemistry, kinetics, Data Science, and machine learning projects
+  text: "A personal website to document my learnings and thoughts"
+  tagline: Spectroscopy, astrochemistry, kinetics, and machine learning and other programming tools - projects
   actions:
     - theme: brand
       text: Get started -->
-      link: /get-started
+      link: /guide/getting-started
     # - theme: alt
     #   text: API Examples
     #   link: /api-examples
