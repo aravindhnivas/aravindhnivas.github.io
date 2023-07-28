@@ -4,22 +4,22 @@ layout: home
 
 hero:
   name: "Aravindh's blog"
-  text: "A personal blog"
-  tagline: My great project tagline
+  text: "A personal project to document my learnings and thoughts"
+  tagline: Spectroscopy, astrochemistry, kinetics, Data Science, and machine learning projects
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Get started -->
+      link: /get-started
+    # - theme: alt
+    #   text: API Examples
+    #   link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  # - title: Feature C
-  #   details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Science and Research
+    details: Spectroscopy, astrochemistry, kinetics, and more
+  - title: Technology
+    details: Data Science, machine learning, and more
+  - title: Personal
+    details: My thoughts and learnings
 ---
 
