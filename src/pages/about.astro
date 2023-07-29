@@ -1,0 +1,114 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Aravindh" description="About Aravindh Lorem Ipsum">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+			>
+				<!-- <img
+					width="1553"
+					height="873"
+					src="/assets/at-work.jpg"
+					alt="Jeanine White at work with a colleague"
+				/> -->
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>
+						I am a trained experimentalist with a background in physical chemistry and a passion for
+						astrochemistry/interstellar chemistry. I am currently a PhD candidate at the Radboud University
+						in Nijmegen, the Netherlands, where I am working on the vibrational and rotational spectroscopy of cold molecular ions in the gas phase. 
+					</p>
+					<p>
+						I am also interested in the application of machine learning to spectroscopic data, and the
+						development of open-source software for the analysis of spectroscopic data.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Education</h2>
+				<div class="content">
+					<p>PhD : 2018 - 2023 : Radboud Univeristy, Nijmegen, Netherlands</p>
+					<p>BSc (Research) + MSc : 2013 - 2018 : Indian Institute of Science, Bengaluru, India</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<p>IR and rotational Spectroscopy</p>
+					<p>Cryogenic ion-trap experiments</p>
+					<p>Programming in Python and Javascript</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
